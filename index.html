@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>High Striker</title>
+    <meta name="description" content="high striker" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Shir Einav Talya Kotler" />
+
+    <link rel="icon" href="images2/favicon.png">
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="toggleBg" class="hide fadeIn"></div>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="index.html">
+                <img id="logo" src="images2/logo.png" /> <!--הלוגו של המשחק שלכם-->
+                <p>High Striker</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp fadeIn hide">
+            <a class="closeAbout">
+                <img class="close" src="images2/close.png" />
+            </a>
+            <div class="info">
+                <img class="gameHeadline" src="images2/gameName.png" />
+                <p>
+                    <span>אפיון ופיתוח:</span>
+                    שיר עינב וטליה קוטלר
+                </p>
+                <p>
+                    אופיין ופותח במסגרת פרויקט בקורסים: <br/>
+                    סביבות לימוד אינטראקטיביות 1 + סביבות אינטראקטיביות 1, תש"פ
+
+                </p>
+                <div class="info-logo">
+                    <img class="hitLogo" src="images2/hit-logo.png" />
+                    <div>
+                        <a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+                        <p>מכון טכנולוגי חולון</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="howToPlayDiv" class="popUp fadeIn hide">
+            <a class="closeHowToPlay">
+                <img class="close" src="images2/close.png" />
+            </a>
+            <img src="images2/howtoplay.png" class="howtoplayImg" alt="הוראות תפעול למשחק: תזוזה ימינה ושמאלה באמצעת חצי המקלדת, סימון ובחירת תשובה באמצעות מקש רווח." />
+           
+        </div>
+        <div class="gameBg"></div>
+
+        <div id="gameArea">
+            <iframe id="gameIframe" src="highstriker.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
